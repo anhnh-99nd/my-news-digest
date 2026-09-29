@@ -15,7 +15,9 @@ Người dùng giao tiếp bằng tiếng Việt — trả lời bằng tiếng 
 - [x] Giai đoạn 3 Telegram — **BỎ**.
 - [~] Giao diện (2026-09-28): logo, theme, ảnh sự kiện, logo báo, thẻ featured, ô tìm kiếm có nút, ẩn tin đã đọc tức thì, lọc trong nước/quốc tế theo nội dung (AI `region`).
   - [ ] Chưa tự xem trên trình duyệt / điện thoại — chờ người dùng góp ý.
-- [ ] Chưa publish thử lên MonsterASP.
+- [x] Git: repo https://github.com/anhnh-99nd/my-news-digest (nhánh `main`), commit đầu 2026-09-29.
+- [x] Đã build bản publish Release → `publish/MyNewsDigest.zip` (~18 MB, thư mục `publish/` bị gitignore), chạy thử Production OK trên máy.
+- [ ] Chưa upload/chạy thật trên MonsterASP (người dùng tự upload zip).
 - [!] **Quota Cloudflare free = 10.000 neurons/ngày**; ngày 2026-09-28 đã hết do test nhiều (llama-3.3-70b tốn). Hết quota → embedding lỗi (gom cụm rơi về Jaccard tiêu đề) + chấm điểm chuyển Gemini (hay 503). Reset 7h sáng VN. Nếu vẫn thiếu: đổi `Cloudflare:ChatModel` sang model nhỏ hoặc giảm `Ai:MaxClustersPerRun`. **Khi test hạn chế số lượt refresh.**
 
 > Cập nhật mục này mỗi khi xong một phần việc, kèm ghi chú ngắn về cấu trúc code/quyết định mới.
